@@ -35,7 +35,6 @@ ADD templates /templates
 VOLUME ["/var/www/webpay/log"]
 
 RUN \
-  mkdir /var/www/webpay/maestros && \
   chmod 755 /var/www/webpay && \
   chmod 755 /var/www/webpay/* && \
   chmod 775 /var/www/webpay/log && \
@@ -50,7 +49,5 @@ WORKDIR /var/www/webpay
 
 CMD ["/usr/bin/reefer", \
   "-t", "/templates/000-default.conf.tmpl:/etc/apache2/sites-enabled/000-default.conf", \
-  "-t", "/templates/privada.pem.tmpl:/var/www/webpay/maestros/privada.pem", \
-  "-t", "/templates/tbk_public_key.pem.tmpl:/var/www/webpay/maestros/tbk_public_key.pem", \
   "-t", "/templates/tbk_config.dat.tmpl:/var/www/webpay/datos/tbk_config.dat", \
   "/usr/local/bin/run.sh"]
