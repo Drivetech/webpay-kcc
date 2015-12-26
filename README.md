@@ -1,6 +1,6 @@
-# docker-webPay
+# webPay-kcc
 
-Transbank Webpay KCC 6.0.2 linux 64.
+Transbank Webpay KCC 6.0.2 linux 64
 
 Esta imagen de docker espera que se disponga de un endpoint de API para obtener y actualizar la orden de compra en el sitio web. Deben ser asi:
 
