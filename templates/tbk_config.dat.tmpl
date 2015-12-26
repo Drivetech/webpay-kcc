@@ -1,0 +1,16 @@
+IDCOMERCIO = {{ .Env "IDCOMERCIO" }}
+MEDCOM = 1
+TBK_KEY_ID = 101
+PARAMVERIFCOM = 1
+URLCGICOM = /tbk_bp_resultado.cgi
+SERVERCOM = {{ .Env "IP" }}
+PORTCOM = 80
+WHITELISTCOM = ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789./:=&?_
+HOST = {{ .Env "IP" }}
+WPORT = 80
+URLCGITRA = {{ .Env "URLCGITRA" }}
+URLCGIMEDTRA = {{ .Env "URLCGIMEDTRA" }}
+SERVERTRA = {{ .Env "SERVERTRA" }}
+PORTTRA = {{ .Env "PORTTRA" }}
+PREFIJO_CONF_TR = HTML_
+HTML_TR_NORMAL = http://{{ .Env "IP" }}/xt_compra.php

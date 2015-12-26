@@ -1,0 +1,18 @@
+<VirtualHost *:80>
+        ServerName localhost
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/webpay
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+        ScriptAlias / /var/www/webpay/
+        <Directory "/var/www/webpay">
+                AllowOverride None
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+        SetEnv ORDER_URL {{ .Env "ORDER_URL" }}
+</VirtualHost>
