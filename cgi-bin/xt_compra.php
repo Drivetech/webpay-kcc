@@ -47,10 +47,10 @@
 
   if ($response->success) {
     $order = json_decode($response->body, true);
-    $status = (int) $order["status"];
+    $status = 0;
     $qs = get_qs();
-    $payment_type = $order["payment_type"];
-    $number_quotas = $order["number_quotas"];
+    $payment_type = null;
+    $number_quotas = null;
 
     $TBK_CODIGO_AUTORIZACION = (isset($TBK_CODIGO_AUTORIZACION)) ? $TBK_CODIGO_AUTORIZACION : "" ;
 

@@ -1,5 +1,7 @@
 FROM phusion/baseimage
 
+MAINTAINER Leonardo Gatica <lgatica@protonmail.com>
+
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
 
