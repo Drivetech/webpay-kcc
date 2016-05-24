@@ -1,4 +1,8 @@
-# webPay-kcc
+# webpay-kcc
+
+[![Image Layers](https://imagelayers.io/badge/lgatica/webpay-kcc:latest.svg)](https://imagelayers.io/?images=lgatica/webpay-kcc:latest 'Get your own badge on imagelayers.io')
+[![Docker Stars](https://img.shields.io/docker/stars/lgatica/webpay-kcc.svg)](https://hub.docker.com/r/lgatica/webpay-kcc/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/lgatica/webpay-kcc.svg)](https://hub.docker.com/r/lgatica/webpay-kcc/)
 
 Transbank Webpay KCC 6.0.2 linux 64
 
