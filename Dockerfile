@@ -1,4 +1,4 @@
-FROM phusion/baseimage
+FROM phusion/baseimage:latest@sha256:d7507394a2e31759297a8726ac1f61e1c135b5255f8be42e7081d85b6fb3f903
 
 MAINTAINER Leonardo Gatica <lgatica@protonmail.com>
 
